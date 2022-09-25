@@ -39,8 +39,8 @@ p {
 .whatsapp-btn {
     background-color: #25D366;
     position: fixed;
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -919,9 +919,8 @@ footer p {
          /*  RESPONSIVE MENU */ 
 
         .menu-h{
-        display: block;
-        height: fit-content;
-
+            display: block;
+            height: fit-content;
         }
 
         .panel{
@@ -962,14 +961,19 @@ footer p {
             position: fixed;
             z-index: 999;
             right: 20px;
-            bottom:120px;
-            height: 80px;
-            width: 80px;
+            bottom:100px;
+            height:60px;
+            width: 60px;
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;           
             background-color: #2e6ca4;
+        
+        }
+
+        .hamburger-box {
+            position: absolute;
         }
 
         .menu{
@@ -1311,7 +1315,7 @@ footer p {
         display: flex;
         flex-direction: row;
         width: 100%;
-        height: 480px;
+        height: 410px;
         background-color: #fff;
         font-size: 22px;
     }  
@@ -1322,14 +1326,15 @@ footer p {
 
     .eighth-section .eighth-section__first-container .eighth-section__first-container-title {
         position: absolute;
-        margin-top: 40px;
+        margin-top: 20px;
         padding: 10px;
-        width: 50%;
-        font-size: 24px;
+        width: 30%;
+        font-size: 18px;
     }
 
+
     .eighth-section .eighth-section__first-container .eighth-section__first-container-subtitle {
-        margin-top: 150px;
+        margin-top: 80px;
         font-size: 16px;
         text-align: center;
     }
@@ -1337,18 +1342,18 @@ footer p {
     .eighth-section  .eighth-section__first-container-second-subtitle {
         font-size: 18px;
         font-weight: bold;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         text-align: center;
         margin-top: 15px;
+
     }
 
     .eighth-section  .eighth-section__first-container-queries {
         width: 90%;
         margin: 0 auto;
-        margin-top: 10px;
+        margin-top: 20px;
         font-size: 14px;
-        margin: 0 auto;
     }
 
     .eighth-section .eighth-section__address-container {
@@ -1374,5 +1379,80 @@ footer p {
      display: none;
         /* position: absolute; */
     }
+
+    footer {
+        font-size: 14px;
+    }
     
+}
+
+@media only screen and (max-width: 400px) {
+    .fifth-section {
+        height: 515px;
+    }
+
+    .seventh-section {
+        height: 280px;
+    }
+    .seventh-section--container {
+        display: flex;
+    }
+
+    .seventh-section--container__first-section {
+        width: 280px;
+        position: relative;
+    }
+    .seventh-section--container__first-section  .seventh-section__description-container{
+        width: 100%;
+        margin-top: 70px;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .seventh-section--container__first-section  .seventh-section__description-container .seventh-section__description-container--description {
+        width: 250px;
+        margin: 0;
+        padding-left: 10px;
+    }
+
+    .seventh-section--container__first-section  .seventh-section__description-container .seventh-section__description-container--description  {
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .seventh-section--container__first-section .seventh-section--title {
+        margin-top: 20px;
+        font-size: 18px;
+        width: 280px;
+    }
+    .seventh-section--container__second-section {
+        width: 20%;
+    }
+    .seventh-section__description-container--information {
+        width: 270px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+        padding-left: 10px;
+    }
+    .seventh-section__description-container--information .seventh-section__description-container--information-schedule  div .clock img {
+        height: 20px;
+        width: 20px;
+        margin-right: 5px;
+    }
+    .seventh-section__description-container--information .seventh-section__description-container--information-schedule  div  .schedule-container {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .seventh-section__description-container--information .seventh-section__description-container--information-phone  div .phone img  {
+        height: 20px;
+        width: 20px;
+        margin-right: 5px;
+    }
+
+    .seventh-section__description-container--information .seventh-section__description-container--information-phone  div .phone-container {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .seventh-section__description-container--information .seventh-section__description-container--information-phone  div .phone-container .phone-number-info {
+        font-size: 16px;
+    }
 }
