@@ -7,10 +7,20 @@ p {
     margin: 0;
 }
 
+/* 
+    Hamburguer menu
+*/
+.menu-visibility{
+    display: none;
+    height: 0px;
+}  
+
+
+
 .logo-head {
     display: none;
 }
-.burguer-menu {
+/* .burguer-menu {
     background-color: #2e6ca4;
     position: fixed;
     height: 80px;
@@ -24,14 +34,8 @@ p {
     z-index: 150;
     cursor: pointer;
     display: none;
-}
+} */
 
-.burguer-menu img {
-    height: 75px;
-    border-radius: 50%;
-    background-color: #2e6ca4;
-    z-index: 100;
-}
 .whatsapp-btn {
     background-color: #25D366;
     position: fixed;
@@ -905,12 +909,91 @@ footer p {
 
 @media only screen and (max-width: 800px) { 
 
-    .burguer-menu {
-        right: 20px;
-        bottom: 120px;
-        display: block;
-    }
     
+
+         /*  RESPONSIVE MENU */ 
+
+        .menu-h{
+        display: block;
+        height: fit-content;
+
+        }
+
+        .panel{
+            position:fixed;
+            z-index: 998;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 70%;
+            background-color:#fff;        
+            transform: translate(100%, 0);           
+            transform: translate(-100%, 0);
+            transition: transform.3s ease;
+
+            
+        }
+
+        .subsection-one .costos-test{
+            display: block;
+            width: 80%;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            margin: 3px auto;
+            
+        }
+
+        .acrive-form{
+            transform: translate(0,0);
+        }
+        
+        .panel.is-active{
+            transform: translate(0,0);
+        }
+
+
+        .panel-btn{            
+            position: fixed;
+            z-index: 999;
+            right: 20px;
+            bottom:120px;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;           
+            background-color: #2e6ca4;
+        }
+
+        .menu{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+        }
+        .menu a{
+            padding: 1.5rem 0rem;
+            width: inherit;
+            display: block;
+            font-size: 1.0rem;
+            text-decoration: none;
+            color: #2e6ca4 ;
+            transition: all 0.3s ease;
+            border-bottom: thin solid #2e6ca4;
+           
+        }
+        .menu a:hover{
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #2e6ca4;
+        }
+                
+    /* FIN RESPONSIVE MENU */ 
+
     
     .whatsapp-btn {
         right: 20px;
