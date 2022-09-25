@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laboratorio</title>
+    <title>CTE-Confederación Nacional de Tranajadores Estatales</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
     <a href="whatsapp://send?text=&phone=+51967306181">
@@ -25,7 +28,7 @@
                             <img src="https://icongr.am/fontawesome/phone.svg?size=128&color=ffffff" alt="" class="phone-icon-container__figure">
                         </div>
                         <div class="phone-number">
-                            <p class="phone-number__text">Lorem, ipsum dolor.</p>
+                            <a class="phone-number__text" href=“tel:013088290”>01 308 8290</a>
                         </div>
                     </div>
                     <div class="address">
@@ -33,14 +36,14 @@
                             <img src="https://icongr.am/fontawesome/map-marker.svg?size=128&color=ffffff" alt="" class="map-icon-container__figure">
                         </div>
                         <div class="map-address">
-                            <p class="map-address__text">Lorem ipsum dolor sit amet.</p>
+                            <a target="_blank" href="https://www.google.com/maps/place/Av.+Alfonso+Ugarte+641,+Lima+15001/@-12.0478779,-77.0422552,17z/data=!3m1!4b1!4m5!3m4!1s0x9105c8ce63cdd95b:0x6c344a6d5940c44b!8m2!3d-12.0478779!4d-77.0422552" class="map-address__text">Av. Alfonso Ugarte 641 - Cercado de Lima.</a>
                         </div>
                     </div>
                 </div>
     
                 <div class="header-information-nav__social">
-                    <img src="https://icongr.am/fontawesome/facebook.svg?size=128&color=ffffff" alt="" class="facebook-icon">
-                    <img src="https://icongr.am/fontawesome/instagram.svg?size=128&color=ffffff" alt="" class="instagram-icon">
+                    <a target="_blank" href="https://www.facebook.com/BiolabInmunomedPeru"> <img src="https://icongr.am/fontawesome/facebook.svg?size=128&color=ffffff" alt="" class="facebook-icon"></a>
+                    <a target="_blank" href="https://www.instagram.com/biolabinmunomed/"><img src="https://icongr.am/fontawesome/instagram.svg?size=128&color=ffffff" alt="" class="instagram-icon"></a> 
                 </div>
             </div>
         </div>
@@ -51,12 +54,16 @@
                 <img src="./media/images/main-logo.png" alt="" class="logo-container__main-logo">
             </div>
             <div class="header-main-menu__options-container">
-                <div class="menu-options-container__item">
-                    <p class="menu-option__selected">Historia</p>
+                <a href="#history">
+                    <div  id="history-menu-btn" class="menu-options-container__item">
+                        <p id="history-btn" class="">Historia</p>
+                    </div>
+                </a>    
+               <a href="#cte-meaning">
+                <div id="cte-menu-btn" class="menu-options-container__item">
+                    <p id="cte-meaning-btn">¿Qué es la CTE?</p>
                 </div>
-                <div class="menu-options-container__item">
-                    <p>¿Qué es la CTE?</p>
-                </div>
+               </a> 
                 <div class="menu-options-container__item">
                     <p>¿Quienes conforman la CTE?</p>
                 </div>
@@ -118,7 +125,7 @@
     </section>
     <p class="blue-sepator"></p>
     <section class="second-section">
-        <div class="second-section__text">
+        <div data-aos="fade-right"  data-aos-duration="1500" class="second-section__text" >
             <div class="second-section__text-icon-container">
                 <img src="./media/images/team.png" alt="manos cruzadas">
             </div>
@@ -135,13 +142,13 @@
     <p class="blue-sepator"></p>
     <section class="third-section">
         <div class="third-section__image-container">
-            <img src="./media/images/nurses.png" alt="nurses">
+            <img data-aos-duration="1000" data-aos="fade-right" src="./media/images/nurses.png" alt="nurses">
         </div>
-        <div class="third-section__description">
-            <h1 class="third-section__description-title">
+        <div class="third-section__description" id="history">
+            <h1 data-aos="fade-left" data-aos-duration="2000"class="third-section__description-title">
                 HISTORIA
             </h1>
-            <p class="third-section__description--pharagraph">
+            <p  data-aos="fade-left" data-aos-duration="4000" class="third-section__description--pharagraph">
                 Fue José Carlos Mariátegui, el gran Amauta peruano, quien trazó el
                 programa y las metas del primer esfuerzo serio para la creación de una
                 organización sindical que “unifique y dirija a todas las fuerzas proletarias
@@ -158,11 +165,11 @@
 
     </section>
     <p class="blue-sepator"></p>  
-    <div class="fourth-section">
-        <div class="fourth-section__text-title">
+    <div class="fourth-section" id="cte-meaning" >
+        <div data-aos="fade-right" data-aos-duration="1500" class="fourth-section__text-title">
             <h1 class="fourth-section__text-box--title">¿Qué es la CTE?</h1>
         </div>
-        <div class="fourth-section__text-box">
+        <div data-aos="fade-right" data-aos-duration="1500" class="fourth-section__text-box">
             <p class="fourth-section__text-box--description">
                 La confederación de trabajadores estatales del Perú
                 es una organización civil sin fines de lucroque
@@ -180,10 +187,10 @@
     </div>
     <p class="blue-sepator"></p>  
     <section class="fifth-section">
-        <div class="fifth-section__text-title">
+        <div data-aos="fade-right" data-aos-duration="1500"class="fifth-section__text-title">
             <h1 class="fifth-section__text-box--title">¿Quiénes conforman la CTE?</h1>
         </div>
-        <div class="fifth-section__text-box">
+        <div data-aos="fade-right" data-aos-duration="1500" class="fifth-section__text-box">
             <p class="fifth-section__text-box--description">
                 La CTE la conforman los trabajadores de diferentes
                 regímenes laborales, de los ministerios del estado y los
@@ -209,9 +216,11 @@
             <img src="./media/images/sixth-section-logo.png" alt="">
         </div>
 
-        <div class="sixth-section__main-container">
+        <div class="sixth-section__main-container" 
+        >
             <div class="sixth-section__text-container">
-                <p class="sixth-section__text-container--description">
+                <p data-aos="fade-up"
+                data-aos-duration="3000" class="sixth-section__text-container--description">
                     ¡Tenemos un
                     compromiso <br>
                     con <strong>tu salud!</strong>   
@@ -238,14 +247,14 @@
                         ¿Qué es SALUD PARA TODOS?
                     </h1>            
                     <div class="seventh-section__description-container">
-                        <div class="seventh-section__description-container--description">
+                        <div data-aos="fade-right" data-aos-duration="1500" class="seventh-section__description-container--description">
                             <p>“Salud para todos” es una red de centros de atención médica
                                 creada en beneficio de los agremiados, sus familias y la
                                 colectividad trabajadora en general. Tenemos la misión de
                                 brindar un excelente servicio en atención médica, con la más
                                 avanzada tecnología y con los mejores precios del mercado.</p>
                         </div>
-                        <div class="seventh-section__description-container--services">
+                        <div class="seventh-section__description-container--services" data-aos="fade-right" data-aos-duration="1500" >
                             <p class="seventh-section__description-container--services-title">Contamos con los servicios de:</p>
                             <ul>
                                 <li> - Urgencias.</li>
@@ -258,7 +267,7 @@
                                 <li> - Especialidades médicas.</li>
                             </ul>                            
                         </div>
-                        <div class="seventh-section__description-container--information">
+                        <div class="seventh-section__description-container--information" data-aos="fade-right" data-aos-duration="1500" >
                             <div class="seventh-section__description-container--information-schedule">
                                 <div>
                                     <div class="clock">
@@ -297,21 +306,21 @@
             <p class="eighth-section__first-container-title">
                 SEDES
             </p>
-            <p class="eighth-section__first-container-subtitle">
+            <p data-aos="fade-right" data-aos-duration="1500"  class="eighth-section__first-container-subtitle">
                 Sede <strong>Alfonso Ugarte</strong> 
             </p>
-            <p class="eighth-section__first-container-second-subtitle">
+            <p data-aos="fade-right" data-aos-duration="1500"  class="eighth-section__first-container-second-subtitle">
                 ¡Consulta por nuestros precios especiales 
                 para <br> agremiados!
             </p>
-            <p class="eighth-section__first-container-queries">
+            <p data-aos="fade-right" data-aos-duration="1500"  class="eighth-section__first-container-queries">
                 Consulta médica general: s/. 8.00 soles.<br> 
                 Laboratorio médico: 60% dscto.<br> 
                 RX: 30% dscto.<br> 
                 Mamografía 30% dscto.<br> 
                 Ecografías 30% dscto.
             </p>
-            <div class="eighth-section__address-container">
+            <div data-aos="fade-right" data-aos-duration="1500"  class="eighth-section__address-container">
                 <div class="eighth-section__address-container--image">
                     <img src="https://icongr.am/material/map-marker-distance.svg?size=128&color=e71d35" alt="">
                 </div>
@@ -325,11 +334,41 @@
             <img src="./media/images/fifth-background.png" alt="">
         </div>
     </section>
+    <footer>
+        <p>Copyright 2022 - Confederación Nacional de Tranajadores Estatales. Todos los derechos reservados.</p>
+    </footer>
 
-    <script>
-        
-    </script>
+         
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="./js/index.js" type="module"></script>  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script>
+        AOS.init();
+    </script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAbb-g6po0oVM5tOr8X1ZUTjoFkKNaCNwI",
+          authDomain: "cte-web-page.firebaseapp.com",
+          projectId: "cte-web-page",
+          storageBucket: "cte-web-page.appspot.com",
+          messagingSenderId: "710636644963",
+          appId: "1:710636644963:web:3e1e2c1451980439f9e656",
+          measurementId: "G-DZJNDR695E"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </body>
 </html>
