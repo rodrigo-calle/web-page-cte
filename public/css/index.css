@@ -129,6 +129,11 @@ p {
     text-decoration: none;
 }
 
+.phone-number__text:hover, .map-address__text:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
 .header .header-information-nav .header-information-nav__contact .address .map-icon-container, .map-address {
     display: flex;
     align-items: center;
@@ -1000,15 +1005,10 @@ footer p {
         bottom: 20px;
     }
 
-    .logo-head {
-        display: block;
-        height: 100px;
-        width: 150px;
-    }
-
-    .logo-container__main-logo {
+    
+    /* .logo-container__main-logo {
         display: none;
-    }
+    } */
 
     .blue-sepator {
         height: 25px;
@@ -1162,20 +1162,28 @@ footer p {
     }
 
     .sixth-section {
-        height: 350px
+        height: 550px
     }
 
     .sixth-section .sixth-section-header {
-        display: none;
+        /* display: none; */
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        margin-top: 15px;
+
     }
 
     .sixth-section .sixth-section-header img {
-        height: 0;
+        height: 100px;
     }
 
     .sixth-section .sixth-section__main-container {
         font-size: 30px;
-        top: 30%;
+        top: 280px;
     }
 
     .sixth-section__text-container--yellow {
@@ -1194,47 +1202,54 @@ footer p {
 
     .sixth-section__main-container .sixth-separator__buttons-container {
         margin-left: 0%;
-        margin: 25px auto;
+        /* margin: 10px auto; */
         vertical-align: top;
         width: fit-content;
         display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        flex-direction: column;
     }
     
-    .sixth-section__main-container .sixth-separator__buttons-container button {
+    .sixth-section__main-container .sixth-separator__buttons-container a button {
         border: none;
         background-color: #2EC5B6;
         color: #fff;
         border-radius: 14px;
-        line-height: 16px;       width: fit-content;
+        line-height: 16px;       
+        width: fit-content;
         font-size: 16px;
         margin: 0px 10px;
         border: 2px solid #2EC5B6;
+    
     }
-    .sixth-section__main-container .sixth-separator__buttons-container button span { 
+    .sixth-section__main-container .sixth-separator__buttons-container a button span { 
         font-size: 20px!important;
-        line-height: 30px;
+        line-height: 16px;
     }
 
 
     .seventh-section {
-        height: 450px;
+        height: 415px;
     }
 
     .seventh-section .seventh-section--title {
         position: absolute;
         margin-top: 40px;
-        padding: 15px 10px;
+        padding: 10px 5px;
         width: 90%;
+        font-size: 24px;
     }
 
     
     .seventh-section .seventh-section--container .seventh-section--container__second-section img {
         height: 70%;
-        max-width: 90%;
+        max-width: 100%;
     }
 
     .seventh-section .seventh-section--container .seventh-section--container__second-section {
-        width: 40%;
+        width: 60%;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -1243,7 +1258,7 @@ footer p {
     }
 
     .seventh-section__description-container {
-        margin-top: 150px;
+        margin-top: 110px;
         width: 90%;
         z-index: 10;
         background-color: rgba(255, 255, 255, 0.555);
@@ -1296,7 +1311,7 @@ footer p {
         display: flex;
         flex-direction: row;
         width: 100%;
-        height: 530px;
+        height: 480px;
         background-color: #fff;
         font-size: 22px;
     }  
@@ -1308,9 +1323,9 @@ footer p {
     .eighth-section .eighth-section__first-container .eighth-section__first-container-title {
         position: absolute;
         margin-top: 40px;
-        padding: 15px 10px;
+        padding: 10px;
         width: 50%;
-        font-size: 35px;
+        font-size: 24px;
     }
 
     .eighth-section .eighth-section__first-container .eighth-section__first-container-subtitle {
@@ -1337,8 +1352,8 @@ footer p {
     }
 
     .eighth-section .eighth-section__address-container {
-        width: 90%;
-        margin-top: 55px;
+        width: fit-content;
+        margin-top: 40px!important;
         margin: 0 auto;
     }
 
