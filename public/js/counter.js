@@ -1,24 +1,29 @@
-const d = document
-
-export default function counter(){
-    const $digit = d.querySelector('#unionized');
-    const $secondSection = d.querySelector('.second-section')
-
-    var stoped = false
-    let observer = new IntersectionObserver((entries, observer) => {   
-        var i = 0
-        if(entries[i] && !stoped) {
-            stoped = true
-            for (let index = 0; index < 150001; index++) {
-                setInterval(() => {
-                    $digit.innerHTML = String(index)
-                }, 10000);                
-            } 
-           
-        }
-        i = 1
-    })
-
-    observer.observe($secondSection)
+const counters = document.querySelectorAll('#unionized');
+const speed = 750; // The lower the slower
+export default function counter() {
+    counters.forEach(counter => {
+        const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+    
+            // Lower inc to slow and higher to slow
+            const inc = target / speed;
+    
+            // console.log(inc);
+            // console.log(count);
+    
+            // Check if target is reached
+            if (count < target) {
+                // Add inc to count and output in counter
+                counter.innerText = count + inc;
+                // Call function every ms
+                setTimeout(updateCount, 1);
+            } else {
+                counter.innerText = target;
+            }
+        };
+    
+        updateCount();
+    });
+    
 }
-

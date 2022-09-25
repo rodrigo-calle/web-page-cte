@@ -4,6 +4,6 @@ import mainMenu from "./menuController.js"
 
 document.addEventListener("DOMContentLoaded", (e)=>{
     mainMenu()
-    hamburguerMenu(".panel-btn", ".panel", ".menu a")
-    counter()
+    hamburguerMenu(".panel-btn", ".panel", ".menu a")    
+    counter()     
 })
