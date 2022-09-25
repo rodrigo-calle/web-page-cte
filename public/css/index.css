@@ -10,7 +10,28 @@ p {
 .logo-head {
     display: none;
 }
+.burguer-menu {
+    background-color: #2e6ca4;
+    position: fixed;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    right: 50px;
+    bottom: 150px;
+    z-index: 150;
+    cursor: pointer;
+    display: none;
+}
 
+.burguer-menu img {
+    height: 75px;
+    border-radius: 50%;
+    background-color: #2e6ca4;
+    z-index: 100;
+}
 .whatsapp-btn {
     background-color: #25D366;
     position: fixed;
@@ -24,6 +45,7 @@ p {
     bottom: 50px;
     z-index: 150;
     cursor: pointer;
+    
 }
 
 .whatsapp-btn img {
@@ -882,6 +904,13 @@ footer p {
 } 
 
 @media only screen and (max-width: 800px) { 
+
+    .burguer-menu {
+        right: 20px;
+        bottom: 120px;
+        display: block;
+    }
+    
     
     .whatsapp-btn {
         right: 20px;
