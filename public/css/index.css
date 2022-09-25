@@ -7,6 +7,10 @@ p {
     margin: 0;
 }
 
+.logo-head {
+    display: none;
+}
+
 .whatsapp-btn {
     background-color: #25D366;
     position: fixed;
@@ -188,6 +192,23 @@ a .menu-options-container__item .menu-option__selected, .menu-options-container_
 
 .first-carousel-banner {
     height: calc(100vh-225px);
+}
+
+.first-carousel-banner .first-carousel-banner__image {
+    background-image: url('../media/images/carousel/main-banner.png');
+    height: 800px;
+    background-size: cover;
+    background-repeat: repeat, no-repeat;
+    padding-left: 80px;
+    padding-top: 80px;
+    background-position: center;
+}
+
+.first-carousel-banner__image--text {
+    color: #fff;
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: bold;
 }
 
 
@@ -431,7 +452,7 @@ a .menu-options-container__item .menu-option__selected, .menu-options-container_
 
 .sixth-section {
     height: 800px;
-    background-image: url(../media/images/sixth-background.png);
+    background-image: url(../media/images/medic.png);
     background-repeat: no-repeat, repeat;
     background-size: cover;
     background-position: bottom;
@@ -508,6 +529,12 @@ a .menu-options-container__item .menu-option__selected, .menu-options-container_
     border: 2px solid #2EC5B6;
 }
 
+.sixth-section__main-container .sixth-separator__buttons-container a {
+    display: flex;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
 .sixth-section__main-container .sixth-separator__buttons-container button:hover {
     border: 2px solid #2EC5B6;
     background-color: #fff;
@@ -534,8 +561,6 @@ a .menu-options-container__item .menu-option__selected, .menu-options-container_
     background-color: #DFE0E2;
     width: 100%;
 }
-
-
 
 .seventh-section .seventh-section--title {
     position: absolute;
@@ -737,6 +762,7 @@ a .menu-options-container__item .menu-option__selected, .menu-options-container_
     width: 80%;
     margin: 0 auto;
     margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .eighth-section .eighth-section__address-container {
@@ -862,6 +888,16 @@ footer p {
         bottom: 20px;
     }
 
+    .logo-head {
+        display: block;
+        height: 100px;
+        width: 150px;
+    }
+
+    .logo-container__main-logo {
+        display: none;
+    }
+
     .blue-sepator {
         height: 25px;
         background-color: #2e6ca4;
@@ -887,11 +923,28 @@ footer p {
     .header-main-menu__logo-container .logo-container__main-logo {
         height: 100px;
     }
+ 
+    .first-carousel-banner .first-carousel-banner__image {
+        background-image: url('../media/images/carousel/main-banner.png');
+        height: 400px;
+        background-size: cover;
+        background-repeat: repeat, no-repeat;
+        padding-left: 40px;
+        padding-top: 40px;
+    }
+    
+    .first-carousel-banner__image--text {
+        color: #fff;
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: bold;
+    }
+    
 
 
     /* carousel */
     .first-carousel-banner {
-        height: 450px;
+        height: 400px;
     }
 
         
@@ -1137,7 +1190,7 @@ footer p {
     }  
 
     .eighth-section .eighth-section__first-container {
-        width: 90%;
+        width: 100%;
     }
 
     .eighth-section .eighth-section__first-container .eighth-section__first-container-title {
@@ -1157,7 +1210,7 @@ footer p {
     .eighth-section  .eighth-section__first-container-second-subtitle {
         font-size: 18px;
         font-weight: bold;
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
         text-align: center;
         margin-top: 15px;
@@ -1168,26 +1221,31 @@ footer p {
         margin: 0 auto;
         margin-top: 10px;
         font-size: 14px;
+        margin: 0 auto;
     }
 
     .eighth-section .eighth-section__address-container {
         width: 90%;
-        margin-top: 25px;
+        margin-top: 55px;
+        margin: 0 auto;
     }
 
     .eighth-section .eighth-section__address-container .eighth-section__address-container--image img {
         height: 40px;
         width: 40px;
         margin-right: 10px;
+        margin: 0 auto;
     }
 
     .eighth-section .eighth-section__address-container .eighth-section__address-container--text {
         font-size: 14px;
         line-height: 16px;
+        margin: 0 auto;
     }
 
     .eighth-section .eighth-section__second-container {
-        text-align: right;
+     display: none;
+        /* position: absolute; */
     }
     
 }

@@ -52,6 +52,7 @@
         <div class="header-main-menu">
             <div class="header-main-menu__logo-container">
                 <img src="./media/images/main-logo.png" alt="" class="logo-container__main-logo">
+                <img src="./media/images/header-log.png" alt="" class="logo-head">
             </div>
             <div class="header-main-menu__options-container">
                 <a href="#history">
@@ -75,7 +76,14 @@
     </header>   
 
     <section class="first-carousel-banner">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="first-carousel-banner__image">
+                <p data-aos="fade-right"  data-aos-duration="1500" class="first-carousel-banner__image--text">
+                    Tenemos como principal <br>
+                    objetivo la defensa de los <br>
+                    derechos laborales en el Perú. 
+                </p>
+        </div>
+        <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -121,7 +129,7 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Siguiente</span>
             </button>
-          </div>
+          </div> -->
     </section>
     <p class="blue-sepator"></p>
     <section class="second-section">
@@ -145,10 +153,10 @@
             <img data-aos-duration="1000" data-aos="fade-right" src="./media/images/nurses.png" alt="nurses">
         </div>
         <div class="third-section__description" id="history">
-            <h1 data-aos="fade-left" data-aos-duration="2000"class="third-section__description-title">
+            <h1 class="third-section__description-title"  data-aos="zoom-in">
                 HISTORIA
             </h1>
-            <p  data-aos="fade-left" data-aos-duration="4000" class="third-section__description--pharagraph">
+            <p class="third-section__description--pharagraph"  data-aos="zoom-in">
                 Fue José Carlos Mariátegui, el gran Amauta peruano, quien trazó el
                 programa y las metas del primer esfuerzo serio para la creación de una
                 organización sindical que “unifique y dirija a todas las fuerzas proletarias
@@ -229,18 +237,25 @@
             <div class="sixth-section__text-container--yellow">
             </div>
             <div class="sixth-separator__buttons-container">
-                <button>
-                   <span style="font-size:30px;">¿Qué es</span>  <br> 
-                    <strong>
-                        Salud Para Todos?
-                    </strong>
-                </button>
-                <button><p>Sedes</p></button>
+                <a href="#health-for-all">
+                    <button>
+                        <span style="font-size:30px;">¿Qué es</span>  <br> 
+                         <strong>
+                             Salud Para Todos?
+                         </strong>
+                     </button>
+                </a>
+                <a href="#seat">
+                    <button>
+                        Sedes
+                    </button>
+                </a>
+                
             </div>
         </div>
     </section>
 
-    <section class="seventh-section">
+    <section class="seventh-section" id="health-for-all">
         <div class="seventh-section--container">
                 <div class="seventh-section--container__first-section">
                     <h1 class="seventh-section--title">
@@ -301,7 +316,7 @@
         </div>
     </section>
 
-    <section class="eighth-section">
+    <section class="eighth-section" id="seat">
         <div class="eighth-section__first-container">
             <p class="eighth-section__first-container-title">
                 SEDES
