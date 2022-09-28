@@ -17,6 +17,8 @@ p {
 
 
 
+
+
 .logo-head {
     display: none;
 }
@@ -421,10 +423,10 @@ a .menu-options-container__item .menu-option__selected, .menu-options-container_
 
 .fifth-section {
     height: 800px;
-    background-image: url(../media/images/fifth-section-background.jpeg);
+    background-image: url(../media/images/secretary.jpeg);
     background-repeat: no-repeat, repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: left;
 
 }
 
@@ -1047,7 +1049,7 @@ footer p {
 }
 
 
-@media only screen and (max-width: 900px) { 
+@media only screen and (max-width: 900px) {     
     .sixth-section {
         height: 850px;
     }
@@ -1055,6 +1057,8 @@ footer p {
 @media only screen and (max-width: 800px) { 
          /*  RESPONSIVE MENU */ 
 
+
+         
         .menu-h{
             display: block;
             height: fit-content;
@@ -1099,8 +1103,8 @@ footer p {
             z-index: 999;
             right: 20px;
             bottom:100px;
-            height:60px;
-            width: 60px;
+            height:70px;
+            width: 70px;
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -1465,6 +1469,7 @@ footer p {
         height: 640px;
         background-color: #fff;
         font-size: 22px;
+       
     }  
     .eighth-section .eighth-section__first-container-prhase {
         margin-top: 120px;
@@ -1507,9 +1512,10 @@ footer p {
     }
 
     .eighth-section .eighth-section__address-container {
-        width: fit-content;
+        width: 100%;
         margin-top: 40px!important;
         margin: 0 auto;
+        justify-content: space-evenly;
     }
 
     .eighth-section .eighth-section__address-container .eighth-section__address-container--image img {
