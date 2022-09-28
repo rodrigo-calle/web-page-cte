@@ -996,8 +996,62 @@ footer p {
     .fourth-section .fourth-section__text-box  {
         margin-top: 13%;
     }
+
+
+
+        
+    .eighth-section .eighth-section__address-container .eighth-section__address-container--text {
+        line-height: 22px;
+        font-size: 22px;
+    }
+    
+    .eighth-section .eighth-section__address-container .eighth-section__address-container--text .phone-number {
+        line-height: 24px;
+        font-size: 24px;
+    }
 } 
 
+@media only screen and (max-width: 1150px) {  
+    .eighth-section {
+        height: 900px;
+    }   
+    .eighth-section .eighth-section__address-container{
+        margin-top: 15px;
+        position: absolute;
+        width: 60%;
+    }
+
+    .eighth-section .eighth-section__address-container div .eighth-section__address-container--image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .eighth-section .eighth-section__address-container div .eighth-section__address-container--image img {
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+    }
+    
+    .eighth-section .eighth-section__address-container .eighth-section__address-container--text {
+        line-height: 22px;
+        font-size: 20px;
+    }
+    
+    .eighth-section .eighth-section__address-container .eighth-section__address-container--text .phone-number {
+        line-height: 26px;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 0;
+    }
+}
+
+
+@media only screen and (max-width: 900px) { 
+    .sixth-section {
+        height: 850px;
+    }
+}
 @media only screen and (max-width: 800px) { 
          /*  RESPONSIVE MENU */ 
 
@@ -1285,13 +1339,27 @@ footer p {
         display: none;
     }
     .sixth-section__text-container {
-        width: 80%;
+        width: fit-content;
         z-index: 30;   
         margin: 0 auto; 
-        border:  10px solid #FF9F1C;
+        border:  10px solid #FF9F1C;   
+        padding: 15px;
     }
 
-    .sixth-section__text-container--description {
+    .sixth-section__text-container .sixth-section__text-container--description {
+        text-align: center;
+        font-size: 24px;
+        padding-right: 0;
+        line-height: 26px;
+    }
+
+    .sixth-section__text-container-pharagraph {
+        width: 90%;
+    }
+
+    .sixth-section__text-container-pharagraph  p{
+        width: 100%;
+        font-size: 20px;
         text-align: center;
     }
 
@@ -1304,26 +1372,14 @@ footer p {
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-        flex-direction: column;
+        flex-direction: row;
     }
     
     .sixth-section__main-container .sixth-separator__buttons-container a button {
-        border: none;
-        background-color: #2EC5B6;
-        color: #fff;
-        border-radius: 14px;
-        line-height: 16px;       
-        width: fit-content;
-        font-size: 16px;
-        margin: 0px 10px;
-        border: 2px solid #2EC5B6;
+    
+        font-size: 20px;
     
     }
-    .sixth-section__main-container .sixth-separator__buttons-container a button span { 
-        font-size: 20px!important;
-        line-height: 16px;
-    }
-
 
     .seventh-section {
         height: 415px;
@@ -1406,10 +1462,13 @@ footer p {
         display: flex;
         flex-direction: row;
         width: 100%;
-        height: 410px;
+        height: 640px;
         background-color: #fff;
         font-size: 22px;
     }  
+    .eighth-section .eighth-section__first-container-prhase {
+        margin-top: 120px;
+    }
 
     .eighth-section .eighth-section__first-container {
         width: 100%;
@@ -1425,7 +1484,7 @@ footer p {
 
 
     .eighth-section .eighth-section__first-container .eighth-section__first-container-subtitle {
-        margin-top: 80px;
+        margin-top: 40px;
         font-size: 16px;
         text-align: center;
     }
@@ -1477,9 +1536,28 @@ footer p {
     
 }
 
+@media only screen and (max-width: 620px) { 
+    .sixth-section {
+        height: 640px;
+    }
+
+    .sixth-section .sixth-section__main-container {
+        top: 300px;
+    }
+
+    .sixth-section__text-container--yellow {
+        display: none;
+    }
+    .sixth-section__text-container {
+        width: fit-content;
+        z-index: 30;   
+        margin: 0 auto; 
+        border:  10px solid #FF9F1C;   
+        padding: 15px;
+    }
+}
+
 @media only screen and (max-width: 400px) {
-
-
 /* 
     .fifth-section {
         height: 560px;
@@ -1510,7 +1588,9 @@ footer p {
     .fifth-section {
         height: 515px;
     }
-
+    .sixth-section {
+        height: 680px;
+    }
     .seventh-section {
         height: 280px;
     }
@@ -1574,5 +1654,44 @@ footer p {
     }
     .seventh-section__description-container--information .seventh-section__description-container--information-phone  div .phone-container .phone-number-info {
         font-size: 16px;
+    }
+    
+    .eighth-section {
+        height: 750px;
+    }
+
+    .eighth-section .eighth-section__first-container-prhase {
+        margin-top: 95px;
+        font-size: 22px;
+    }
+
+    .eighth-section .eighth-section__first-container .eighth-section__first-container-subtitle {
+        margin-top: 25px;
+    }
+
+    .eighth-section .eighth-section__first-container .eighth-section__first-container-subtitle .welcome-title {
+        font-size: 26px;
+    }
+
+    .eighth-section .eighth-section__first-container .eighth-section__first-container-subtitle .main-site {
+        font-size: 24px;
+    }
+    .eighth-section .eighth-section__first-container .eighth-section__address-container {
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto;
+        position: relative;
+        margin-top: 30px!important;
+        /* width: 100%; */
+    }
+    .eighth-section .eighth-section__first-container .eighth-section__address-container  div {
+        margin: 5px auto;
+    }
+    .eighth-section .eighth-section__first-container .eighth-section__address-container div .eighth-section__address-container--text strong {
+        font-size: 18px;
+    }
+
+    .eighth-section .eighth-section__first-container .eighth-section__first-container-queries {
+        padding-left: 5px;
     }
 }
