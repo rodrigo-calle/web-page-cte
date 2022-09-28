@@ -1289,6 +1289,7 @@ footer p {
 
     .fifth-section {
         height: 560px;
+        background-position: center;
     }
 
     .fifth-section .fifth-section__text-box {
@@ -1593,6 +1594,7 @@ footer p {
     }
     .fifth-section {
         height: 515px;
+        background-position: center;
     }
     .sixth-section {
         height: 680px;
