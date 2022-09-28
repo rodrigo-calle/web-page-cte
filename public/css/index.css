@@ -39,8 +39,8 @@ p {
 .whatsapp-btn {
     background-color: #25D366;
     position: fixed;
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,7 +97,7 @@ p {
     flex-direction: row;
     justify-content: space-between;
     height: 45px;
-    width: 95%;
+    width: 93%;
     margin: 0 auto;
 }
 
@@ -156,7 +156,7 @@ p {
     display: flex;
     align-items: center;
     height: 75%;
-    margin-left:  10px;
+    /* margin-left:  10px; */
 }
 
 .header-information-nav .header-information-nav__social a img {
@@ -494,7 +494,7 @@ a .menu-options-container__item .menu-option__selected, .menu-options-container_
 }
 
 .sixth-section .sixth-section__main-container {
-    font-size: 45px;
+    font-size: 35px;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -509,13 +509,19 @@ a .menu-options-container__item .menu-option__selected, .menu-options-container_
     /* position: relative;
     top: 50%;
     transform: translateY(-50%); */
-    width: 25%;
+    width: 20%;
     /* background-color: #ffffffb9;  */
     z-index: 30;
 }
 
-.sixth-section__text-container--description {
+.sixth-section__text-container .sixth-section__text-container--description {
     text-align: right;
+    /* margin: 10px; */
+    /* padding: 0px 20px; */
+    /* text-align: center; */
+    padding-right: 25px;
+    line-height: 35px;
+    
 }
 
 .sixth-section__text-container--yellow {
@@ -523,13 +529,24 @@ a .menu-options-container__item .menu-option__selected, .menu-options-container_
     position: relative;
     top: 50%;
     transform: translateY(-50%); */
-
+    /* border-top: 10px solid #FF9F1C ; */
     border-bottom: 10px solid #FF9F1C;
     border-right: 10px solid #FF9F1C;
     /* border-top: 10px solid #FF9F1C; */
-    width: 27%;
-    height: 140px;
-    margin-top: -130px ;
+    width: 23%;
+    height: 80px;
+    margin-top: -45px ;
+}
+
+.sixth-section__text-container-pharagraph {
+    font-size: 22px;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.sixth-section__text-container-pharagraph p {
+    width: 55%;
+    margin-left: 0;
 }
 
 .sixth-section__main-container .sixth-separator__buttons-container {
@@ -542,14 +559,14 @@ a .menu-options-container__item .menu-option__selected, .menu-options-container_
 
 .sixth-section__main-container .sixth-separator__buttons-container button {
     border: none;
-    background-color: #2EC5B6;
+    background-color: #E71D35;
     color: #fff;
     border-radius: 14px;
     line-height: 30px;
     width: fit-content;
     font-size: 30px;
-    margin: 0px 10px;
-    border: 2px solid #2EC5B6;
+    margin: 0px 25px;
+    border: 2px solid #E71D35;
 }
 
 .sixth-section__main-container .sixth-separator__buttons-container a {
@@ -559,14 +576,14 @@ a .menu-options-container__item .menu-option__selected, .menu-options-container_
 }
 
 .sixth-section__main-container .sixth-separator__buttons-container button:hover {
-    border: 2px solid #2EC5B6;
+    border: 2px solid #E71D35;
     background-color: #fff;
-    color: #2EC5B6;
+    color: #E71D35;
 }
 
 .sixth-section__main-container .sixth-separator__buttons-container button:first-child {
-    height: 85px;
-    padding: 10px 15px;
+    height: 55px;
+    padding: 10px 10px;
 }
 
 .sixth-section__main-container .sixth-separator__buttons-container button:last-child {
@@ -754,15 +771,35 @@ a .menu-options-container__item .menu-option__selected, .menu-options-container_
     padding: 25px 35px;
     border-radius: 0% 14px 14px 0px ;
     font-size: 40px;
-    font-weight: bold;
+    font-weight: bolder;
+}
+
+.eighth-section__first-container-prhase {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 28px;
+    line-height: 28px;
 }
 
 .eighth-section .eighth-section__first-container .eighth-section__first-container-subtitle {
-    margin-top: 200px;
-    font-size: 30px;
+    margin-top: 20px;
+    font-size: 32px;
     text-align: center;
+    line-height: 30px;
+
 
 }
+
+.eighth-section .eighth-section__first-container .eighth-section__first-container-subtitle .welcome-title {
+    color: #FF9F1C;
+    font-weight: bold ;
+    font-size: 26px;
+}
+
+/* .eighth-section .eighth-section__first-container .eighth-section__first-container-subtitle .main-site {
+    font-weight: bold ;
+    line-height: 32px;
+} */
 
 .eighth-section .eighth-section__second-container {
     width: 50%;
@@ -775,43 +812,56 @@ a .menu-options-container__item .menu-option__selected, .menu-options-container_
 
 .eighth-section  .eighth-section__first-container-second-subtitle {
     font-size: 26px;
-    font-weight: bold;
+    font-weight: 500;
     width: 80%;
     margin: 0 auto;
-    margin-top: 65px;
+    margin-top: 35px;
+    line-height: 26px;
 }
 
 .eighth-section  .eighth-section__first-container-queries {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 30px;
+    padding-left: 10%;
+    font-size: 22px;
+    line-height: 22px;
 }
 
 .eighth-section .eighth-section__address-container {
     display: flex;
     flex-direction: row;
-    width: 80%;
-    justify-content: right;
+    width: 85%;
+    justify-content: space-evenly;
     margin: 0 auto;
     margin-top: 60px;
-    padding-right: 15px;
 }
-
-.eighth-section .eighth-section__address-container .eighth-section__address-container--image {
+.eighth-section .eighth-section__address-container div {
+    display: flex;
+}
+.eighth-section .eighth-section__address-container div .eighth-section__address-container--image {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.eighth-section .eighth-section__address-container .eighth-section__address-container--image img {
-    height: 50px;
-    width: 50px;
+.eighth-section .eighth-section__address-container div .eighth-section__address-container--image img {
+    height: 40px;
+    width: 40px;
     margin-right: 10px;
 }
 
 .eighth-section .eighth-section__address-container .eighth-section__address-container--text {
     line-height: 22px;
+    font-size: 24px;
+}
+
+.eighth-section .eighth-section__address-container .eighth-section__address-container--text .phone-number {
+    line-height: 26px;
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 0;
 }
 
 footer p {
