@@ -1597,6 +1597,10 @@ footer p {
     .sixth-section {
         height: 680px;
     }
+
+    .sixth-section__main-container .sixth-separator__buttons-container a button {    
+        margin: 5px;    
+    }
     .seventh-section {
         height: 280px;
     }
