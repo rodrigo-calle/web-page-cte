@@ -21,6 +21,10 @@ export default function counter() {
             } else {
                 counter.innerText = target;
             }
+
+            setTimeout(()=> {
+                counter.innerText = "150 000";
+            }, 3000)
         };
     
         updateCount();
