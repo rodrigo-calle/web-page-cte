@@ -232,12 +232,12 @@ a .menu-options-container__item .menu-option__selected, .menu-options-container_
 }
 
 .first-carousel-banner .first-carousel-banner__image {
-    /* background-image: url('../media/images/carousel/main-banner.png'); */
-    height: 800px;
+    background-image: url('../media/images/salud-para-todos.jpg');
+    height: 650px;
     background-size: cover;
     background-repeat: repeat, no-repeat;
     padding-left: 70px;
-    padding-top: 70px;
+    padding-top: 20%;
     background-position: center;
     background-color: #2e6ca4;
 }
@@ -1207,7 +1207,7 @@ footer p {
         background-size: cover;
         background-repeat: repeat, no-repeat;
         padding-left: 40px;
-        padding-top: 40px;
+        padding-top: 20%;
     }
     
     .first-carousel-banner__image--text {
@@ -1267,6 +1267,7 @@ footer p {
 
     .third-section {
         flex-direction: column;
+        height: 300px;
     }
 
     .third-section .third-section__description { 
@@ -1564,6 +1565,14 @@ footer p {
 }
 
 @media only screen and (max-width: 620px) { 
+    .first-carousel-banner .first-carousel-banner__image {
+        /* background-image: url('../media/images/carousel/main-banner.png'); */
+        height: 400px;
+        background-size: cover;
+        background-repeat: repeat, no-repeat;
+        padding-left: 20px;
+        padding-top: 35%;
+    }
     .sixth-section {
         height: 640px;
     }
@@ -1589,6 +1598,11 @@ footer p {
     .fifth-section {
         height: 560px;
     } */
+
+    .third-section {
+        height: 350px;
+        padding-bottom: 20px;
+    }
     .panel-btn{            
         bottom:120px;
         height:70px;
