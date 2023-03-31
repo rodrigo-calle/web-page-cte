@@ -508,7 +508,7 @@ a .menu-options-container__item .menu-option__selected, .menu-options-container_
 }
 
 .sixth-section .sixth-section-header img {
-    height: 90%;
+    height: 100%;
 }
 
 .sixth-section .sixth-section__main-container {
@@ -911,6 +911,11 @@ footer p {
         
 
     } */
+
+    .third-section .third-section__image-container img {
+        height: 60%;
+        width: 80%;
+    }
     .fifth-section .fifth-section__text-title  {
         font-size: 22px;
         padding-top: 12px;
